@@ -3,9 +3,9 @@ const menuOpen = document.querySelector(".hamburger-menu");
 const hamClose = document.querySelector(".hamburger-menu>a");
 
 hamOpen.addEventListener('click', function(){
-    menuOpen.style.display = "block";
+    menuOpen.classList.add('active');
 });
 
 hamClose.addEventListener('click', function () {
-    menuOpen.style.display = "none";
+    menuOpen.classList.remove('active');
 });
